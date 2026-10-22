@@ -1,0 +1,228 @@
+<!doctype html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="theme-color" content="#ffd400">
+<title>SKRAN STORE | سكران استور</title>
+<style>
+:root{--y:#ffd400;--bg:#101010;--panel:#1a1a1a;--muted:#b7b7b7;--line:#333;--white:#f7f7f2}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:var(--bg);color:var(--white);font-family:Tahoma,Arial,sans-serif}button,input,a{font:inherit}button,a{cursor:pointer}a{color:inherit;text-decoration:none}.top{padding:15px 5%;display:flex;justify-content:space-between;align-items:center;background:#141414;border-bottom:1px solid #292929;position:sticky;top:0;z-index:4}.brand{display:flex;gap:10px;align-items:center}.logo{width:43px;height:43px;background:var(--y);color:#111;border-radius:12px;display:grid;place-items:center;font-weight:1000;font-size:27px}.brand b{display:block;font-size:17px}.brand small{display:block;color:var(--y);font-size:10px;letter-spacing:2px}.cartbtn,.filter{background:#242424;border:1px solid #444;color:#fff;border-radius:10px;padding:10px 13px}.cartbtn span{background:var(--y);color:#111;border-radius:50%;padding:3px 7px;margin-right:5px}.hero{padding:45px 7%;display:grid;grid-template-columns:1fr 1fr;align-items:center;gap:20px;background:radial-gradient(ellipse at 75% 45%,#373008,transparent 48%),#121212}.eyebrow{color:var(--y);font-size:11px;letter-spacing:2px;font-weight:bold}.hero h1{font-size:clamp(34px,6vw,57px);line-height:1.45;margin:12px 0}.hero h1 em{font-style:normal;color:var(--y)}.hero p{line-height:1.9;color:#c4c4c4;font-size:14px}.primary,.buy{border:0;background:var(--y);color:#111;font-weight:bold;padding:13px 17px;border-radius:10px;display:inline-block}.art{height:270px;display:grid;place-items:center;position:relative}.gamecard{width:170px;height:220px;background:linear-gradient(145deg,#ffeb76,#c49f00 75%);color:#111;border-radius:22px;display:flex;flex-direction:column;align-items:center;justify-content:center;transform:rotate(7deg);box-shadow:0 20px 60px #0009;border:1px solid #fff0a0}.gamecard strong{font-size:70px;letter-spacing:-7px}.gamecard span{font-size:12px;letter-spacing:3px;font-weight:bold}.chip{position:absolute;background:#222;border:1px solid #5d5015;padding:10px;border-radius:10px;font-size:12px}.c1{top:25px;left:4%}.c2{bottom:20px;right:3%}.features{display:grid;grid-template-columns:repeat(3,1fr);gap:12px;padding:20px 7%;background:#171717;border-block:1px solid #292929}.feature{display:flex;align-items:center;gap:10px;justify-content:center}.feature i{font-style:normal;font-size:22px}.feature b,.feature small{display:block}.feature b{font-size:13px}.feature small{color:var(--muted);font-size:10px;margin-top:5px}.section{padding:55px 7%}.heading{display:flex;justify-content:space-between;align-items:end;gap:15px;flex-wrap:wrap}.heading h2{font-size:30px;margin:8px 0}.heading h2 em{font-style:normal;color:var(--y)}.heading p{color:var(--muted);font-size:12px}.search{background:#202020;border:1px solid #444;border-radius:10px;padding:11px;color:white;min-width:200px;max-width:100%}.filters{display:flex;gap:8px;flex-wrap:wrap;margin:23px 0}.filter{font-size:12px;color:#ddd}.filter.active{background:var(--y);border-color:var(--y);color:#111;font-weight:bold}.grid{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:13px}.card{background:linear-gradient(145deg,#202020,#161616);border:1px solid #333;border-radius:14px;padding:16px;cursor:pointer;min-height:190px;display:flex;flex-direction:column;transition:.2s}.card:hover{border-color:var(--y);transform:translateY(-3px)}.ico{height:48px;width:48px;border-radius:13px;background:#332d0d;color:var(--y);display:grid;place-items:center;font-size:25px;margin-bottom:13px}.card h3{font-size:14px;margin:0 0 8px}.card p{font-size:11px;color:#aaa;margin:0 0 15px}.cardfoot{margin-top:auto;display:flex;justify-content:space-between;align-items:center;gap:6px}.pricehint{font-size:10px;color:#aaa}.details{background:#2b2b2b;border:0;color:var(--y);padding:8px;border-radius:8px;font-size:11px}.how{margin:0 7% 55px;border:1px solid #4a400f;background:#1c1b13;padding:25px;border-radius:15px}.how h2{margin:8px 0}.how p{color:#bbb;line-height:1.9;font-size:13px}footer{border-top:1px solid #333;padding:25px 6%;color:#999;font-size:11px;line-height:1.8}.modalbg{position:fixed;inset:0;background:#000b;z-index:10;display:grid;place-items:center;padding:16px}.modal{background:#1b1b1b;border:1px solid #5b4e10;border-radius:17px;padding:23px;width:min(430px,100%);position:relative}.close{position:absolute;left:13px;top:10px;border:0;border-radius:8px;background:#333;color:#fff;font-size:22px;width:32px;height:32px}.modal h2{margin:10px 0}.modal p{color:#bbb;font-size:13px;line-height:1.8}.rowline{display:flex;justify-content:space-between;border-top:1px solid #333;padding:13px 0;font-size:13px}.rowline b{color:var(--y)}.actions{display:grid;grid-template-columns:1fr 1fr;gap:9px;margin-top:12px}.add{background:#302b13;color:var(--y);border:1px solid #5b4e10;border-radius:9px;font-weight:bold}.buy{border-radius:9px}.drawerbg{position:fixed;inset:0;background:#0009;z-index:14}.drawer{position:fixed;z-index:15;right:0;top:0;bottom:0;width:min(410px,92vw);background:#181818;border-left:1px solid #333;padding:20px;transform:translateX(110%);transition:.25s;display:flex;flex-direction:column}.drawer.open{transform:translateX(0)}.drawerhead{display:flex;justify-content:space-between;align-items:center;border-bottom:1px solid #333}.drawerhead button{background:#333;color:white;border:0;border-radius:8px;padding:7px 12px}.items{overflow:auto;flex:1}.item{display:flex;justify-content:space-between;gap:10px;border-bottom:1px solid #333;padding:14px 0;font-size:12px}.item small{display:block;color:#aaa;margin-top:5px}.item b{color:var(--y)}.remove{display:block;background:none;border:0;color:#ff958a;font-size:11px;margin-top:5px}.total{border-top:1px solid #333;padding-top:15px;display:flex;justify-content:space-between;margin-bottom:15px}.total b{color:var(--y)}.full{width:100%}.notice{color:#999;font-size:10px;text-align:center}.toast{position:fixed;bottom:18px;left:50%;transform:translate(-50%,30px);background:var(--y);color:#111;padding:11px 15px;border-radius:10px;opacity:0;transition:.2s;z-index:30;font-size:12px;font-weight:bold}.toast.show{opacity:1;transform:translate(-50%,0)}[hidden]{display:none!important}
+
+.game-grid{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:13px;margin-top:22px}
+.game-tile{border:1px solid #333;background:linear-gradient(145deg,#202020,#151515);color:#fff;border-radius:15px;padding:18px 12px;display:flex;flex-direction:column;align-items:center;gap:8px;cursor:pointer}
+.game-tile:hover,.game-tile.selected{border-color:var(--y);background:linear-gradient(145deg,#302a0e,#191919)}
+.game-tile-icon{width:60px;height:60px;border-radius:17px;background:#332d0d;color:var(--y);display:grid;place-items:center;font-size:31px}
+.game-tile b{font-size:14px}.game-tile small{font-size:10px;color:#aaa}
+.game-label{display:inline-block;color:var(--y);font-size:12px;margin-top:12px}
+@media(max-width:760px){.game-grid{grid-template-columns:repeat(2,minmax(0,1fr));gap:10px}.game-tile{padding:15px 10px}}
+
+@media(max-width:760px){.hero{grid-template-columns:1fr;padding:35px 22px 15px}.art{height:240px}.features{padding:16px 12px}.feature{justify-content:flex-start}.feature b{font-size:11px}.feature small{font-size:9px}.section{padding:42px 16px}.grid{grid-template-columns:repeat(2,minmax(0,1fr));gap:10px}.card{padding:12px;min-height:185px}.card h3{font-size:12px}.cardfoot{align-items:stretch;flex-direction:column}.details{width:100%}.heading h2{font-size:26px}.search{width:100%}.how{margin:0 16px 40px;padding:20px}.top{padding:12px}.brand b{font-size:14px}.brand small{font-size:9px}}
+@media(max-width:360px){.grid{grid-template-columns:1fr}.features{grid-template-columns:1fr}.feature{justify-content:flex-start}}
+
+/* Integrated charging and contact sections */
+.extra-section{padding:45px 7%;border-top:1px solid #49400f;background:linear-gradient(180deg,#171717 0%,#202020 100%)}
+.extra-section .eyebrow{color:var(--y);font-size:11px;letter-spacing:2px;font-weight:bold}
+.extra-section h2{margin:9px 0 18px;font-size:28px}
+.extra-section h2 em{font-style:normal;color:var(--y)}
+.extra-tabs{display:flex;gap:8px;flex-wrap:wrap;margin:20px 0}
+.extra-tab{background:#242424;border:1px solid #444;color:#eee;border-radius:10px;padding:10px 13px;cursor:pointer}
+.extra-tab.active{background:var(--y);border-color:var(--y);color:#111;font-weight:bold}
+.extra-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:13px;align-items:start}
+.extra-card{background:linear-gradient(145deg,#292929,#1d1d1d);border:1px solid #62530c;border-radius:14px;padding:16px;box-shadow:0 6px 18px #0003;min-width:0}
+.extra-card h3{color:var(--y);font-size:16px;margin:0 0 12px}
+.extra-price{display:flex;justify-content:space-between;gap:10px;padding:10px 0;border-bottom:1px solid #414141;font-size:13px;color:#f7f7f2}
+.extra-price b{color:var(--y);white-space:nowrap}
+.extra-order{display:block;text-align:center;background:var(--y);color:#111;font-weight:bold;padding:11px;border-radius:9px;margin-top:13px;font-size:12px}
+.extra-note{margin-top:20px;background:#1c1b13;border:1px solid #4a400f;border-radius:12px;padding:16px;color:#ccc;line-height:1.9;font-size:12px}
+.contact-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px}
+.contact-card{background:#262626;border:1px solid #62530c;border-radius:12px;padding:16px;box-shadow:0 6px 18px #0003}
+.contact-card h3{color:var(--y);margin:0 0 10px;font-size:15px}
+.contact-card a{display:block;color:#f7f7f2;text-decoration:none;padding:8px 0;overflow-wrap:anywhere;font-size:12px}
+.contact-card a:hover{color:var(--y)}
+@media(max-width:760px){.extra-section{padding:35px 16px}.extra-grid{grid-template-columns:repeat(2,minmax(0,1fr))}.contact-grid{grid-template-columns:1fr}}
+@media(max-width:420px){.extra-grid{grid-template-columns:1fr}}
+
+</style>
+</head>
+<body>
+<header class="top"><a class="brand" href="#"><span class="logo">S</span><span><b>سكران استور</b><small>SKRAN STORE</small></span></a><a class="cartbtn" href="#charging" style="margin-inline-start:8px">⚡ الشحن والأسعار</a><button class="cartbtn" id="cartOpen">🛒 السلة <span id="count">0</span></button></header>
+<section class="hero"><div><span class="eyebrow">YOUR GAME. YOUR POWER.</span><h1>اشحن لعبتك<br><em>وخليك دايمًا سابق</em></h1><p>عروض فري فاير وشحن جواهر بأسعار واضحة وخطوات طلب سهلة.</p><a class="primary" href="#products">شوف المنتجات ←</a><p>🟢 استقبال الطلبات عبر واتساب</p></div><div class="art"><div class="gamecard"><span>FREE FIRE</span><strong>FF</strong><span>TOP UP</span></div><div class="chip c1">💎 جواهر</div><div class="chip c2">⚡ شحن سريع</div></div></section>
+<section class="features"><div class="feature"><i>⚡</i><div><b>طلب سهل</b><small>من خلال واتساب</small></div></div><div class="feature"><i>💎</i><div><b>عروض متنوعة</b><small>اختار الباقة المناسبة</small></div></div><div class="feature"><i>🛡️</i><div><b>راجع طلبك</b><small>قبل التأكيد</small></div></div></section>
+
+<section class="section" id="games">
+  <div class="heading"><div><span class="eyebrow">CHOOSE YOUR GAME</span><h2>اختار <em>لعبتك</em></h2><p>اضغط على اللعبة عشان تظهر باقاتها وأسعارها.</p></div></div>
+  <div class="game-grid" id="gameGrid">
+    <button class="game-tile selected" data-game="freefire"><span class="game-tile-icon">🔥</span><b>فري فاير</b><small>Free Fire</small></button>
+    <button class="game-tile" data-game="pubg"><span class="game-tile-icon">🎯</span><b>ببجي موبايل</b><small>PUBG Mobile</small></button>
+    <button class="game-tile" data-game="fifa"><span class="game-tile-icon">⚽</span><b>فيفا</b><small>EA SPORTS FC</small></button>
+    <button class="game-tile" data-game="pes"><span class="game-tile-icon">⚽</span><b>بيس</b><small>eFootball</small></button>
+  </div>
+</section>
+
+<main class="section" id="products"><div class="heading"><div><span class="eyebrow">STORE CATALOG</span><h2>منتجات <em>فري فاير</em></h2><p>اضغط على المنتج عشان تشوف السعر والتفاصيل.</p></div><input class="search" id="search" placeholder="ابحث عن منتج..." aria-label="ابحث عن منتج"></div><div class="filters" id="filters"><button class="filter active" data-cat="all">كل المنتجات</button><button class="filter" data-cat="membership">العضويات</button><button class="filter" data-cat="drops">دروب</button><button class="filter" data-cat="diamonds">جواهر</button></div><div class="grid" id="grid"></div><p id="empty" hidden>مفيش منتجات مطابقة للبحث.</p></main>
+<section class="how"><span class="eyebrow">HOW TO ORDER</span><h2>اطلب في 3 خطوات</h2><p>اختار المنتج، ضيفه للسلة، وبعدها ابعت تفاصيل طلبك على واتساب. راجع السعر ومتطلبات الـ ID قبل تأكيد الطلب.</p></section>
+
+<section class="extra-section" id="charging">
+  <span class="eyebrow">SKRAN STORE • TOP UP CENTER</span>
+  <h2>شحن الألعاب <em>والتطبيقات</em></h2>
+  <p style="color:#bbb;font-size:13px;line-height:1.9">اختار الباقة وتواصل معنا لإتمام الطلب عبر واتساب على الرقم <b dir="ltr">01101598044</b>.</p>
+  <div class="extra-tabs">
+    <button class="extra-tab active" data-extra-filter="all">كل الأقسام</button>
+    <button class="extra-tab" data-extra-filter="tiktok">تيك توك</button>
+    <button class="extra-tab" data-extra-filter="pes">بيس</button>
+    <button class="extra-tab" data-extra-filter="pubg">ببجي</button>
+    <button class="extra-tab" data-extra-filter="freefire">فري فاير</button>
+    <button class="extra-tab" data-extra-filter="social">السوشيال ميديا</button>
+  </div>
+  <div class="extra-grid">
+    <article class="extra-card" data-extra-category="tiktok">
+      <h3>🎵 كوينات TikTok</h3>
+      <div class="extra-price"><span>100 كوين</span><b>90 ج.م</b></div>
+      <div class="extra-price"><span>140 كوين</span><b>130 ج.م</b></div>
+      <div class="extra-price"><span>150 كوين</span><b>140 ج.م</b></div>
+      <div class="extra-price"><span>200 كوين</span><b>160 ج.م</b></div>
+      <div class="extra-price"><span>250 كوين</span><b>190 ج.م</b></div>
+      <div class="extra-price"><span>300 كوين</span><b>250 ج.م</b></div>
+      <div class="extra-price"><span>350 كوين</span><b>280 ج.م</b></div>
+      <div class="extra-price"><span>400 كوين</span><b>310 ج.م</b></div>
+      <div class="extra-price"><span>450 كوين</span><b>340 ج.م</b></div>
+      <div class="extra-price"><span>500 كوين</span><b>370 ج.م</b></div>
+      <div class="extra-price"><span>1000 كوين</span><b>650 ج.م</b></div>
+      <div class="extra-price"><span>1500 كوين</span><b>950 ج.م</b></div>
+      <div class="extra-price"><span>2000 كوين</span><b>1300 ج.م</b></div>
+      <p style="color:#aaa;font-size:11px">متاح كميات أكبر — اسأل عن الأسعار.</p>
+      <a class="extra-order" href="https://wa.me/201101598044?text=أريد%20طلب%20كوينات%20TikTok">اطلب عبر واتساب</a>
+    </article>
+    <article class="extra-card" data-extra-category="pes">
+      <h3>⚽ بيس eFootball</h3>
+      <div class="extra-price"><span>130 كوين</span><b>75 ج.م</b></div>
+      <div class="extra-price"><span>300 كوين</span><b>135 ج.م</b></div>
+      <div class="extra-price"><span>550 كوين</span><b>250 ج.م</b></div>
+      <div class="extra-price"><span>750 كوين</span><b>325 ج.م</b></div>
+      <div class="extra-price"><span>1040 كوين</span><b>450 ج.م</b></div>
+      <div class="extra-price"><span>2160 كوين</span><b>850 ج.م</b></div>
+      <div class="extra-price"><span>3250 كوين</span><b>1350 ج.م</b></div>
+      <div class="extra-price"><span>5700 كوين</span><b>2100 ج.م</b></div>
+      <div class="extra-price"><span>12800 كوين</span><b>4500 ج.م</b></div>
+      <a class="extra-order" href="https://wa.me/201101598044?text=أريد%20شحن%20eFootball">اطلب عبر واتساب</a>
+    </article>
+    <article class="extra-card" data-extra-category="pubg">
+      <h3>🎯 ببجي موبايل — ID</h3>
+      <div class="extra-price"><span>60 UC</span><b>60 ج.م</b></div>
+      <div class="extra-price"><span>120 UC</span><b>115 ج.م</b></div>
+      <div class="extra-price"><span>325 UC</span><b>255 ج.م</b></div>
+      <div class="extra-price"><span>660 UC</span><b>520 ج.م</b></div>
+      <div class="extra-price"><span>1800 UC</span><b>1300 ج.م</b></div>
+      <div class="extra-price"><span>3850 UC</span><b>2500 ج.م</b></div>
+      <div class="extra-price"><span>برايم عادي</span><b>60 ج.م</b></div>
+      <div class="extra-price"><span>برايم بلس</span><b>460 ج.م</b></div>
+      <a class="extra-order" href="https://wa.me/201101598044?text=أريد%20شحن%20ببجي">اطلب عبر واتساب</a>
+    </article>
+    <article class="extra-card" data-extra-category="freefire">
+      <h3>🔥 فري فاير</h3>
+      <div class="extra-price"><span>العضوية الشهرية</span><b>370 ج.م</b></div>
+      <div class="extra-price"><span>العضوية الأسبوعية</span><b>90 ج.م</b></div>
+      <div class="extra-price"><span>أسبوعية ID</span><b>120 ج.م</b></div>
+      <div class="extra-price"><span>دروب 1 دولار</span><b>50 ج.م</b></div>
+      <div class="extra-price"><span>دروب 2 دولار</span><b>90 ج.م</b></div>
+      <div class="extra-price"><span>310 جوهرة</span><b>140 ج.م</b></div>
+      <div class="extra-price"><span>520 جوهرة</span><b>210 ج.م</b></div>
+      <div class="extra-price"><span>1060 جوهرة</span><b>370 ج.م</b></div>
+      <div class="extra-price"><span>2180 جوهرة</span><b>740 ج.م</b></div>
+      <div class="extra-price"><span>3240 جوهرة</span><b>1100 ج.م</b></div>
+      <div class="extra-price"><span>5600 جوهرة</span><b>1850 ج.م</b></div>
+      <div class="extra-price"><span>11200 جوهرة</span><b>3600 ج.م</b></div>
+      <p style="color:#aaa;font-size:11px">الشحن متاح في أي وقت حسب تأكيد الطلب.</p>
+      <a class="extra-order" href="https://wa.me/201101598044?text=أريد%20شحن%20فري%20فاير">اطلب عبر واتساب</a>
+    </article>
+    <article class="extra-card" data-extra-category="social">
+      <h3>▶️ YouTube</h3><p style="color:#bbb;font-size:12px;line-height:1.8">اسأل عن الخدمات والأسعار المتاحة.</p>
+      <a class="extra-order" href="https://wa.me/201101598044?text=أريد%20الاستفسار%20عن%20خدمات%20YouTube">اسأل عن السعر</a>
+    </article>
+    <article class="extra-card" data-extra-category="social">
+      <h3>📸 Instagram</h3><p style="color:#bbb;font-size:12px;line-height:1.8">حدد الخدمة المطلوبة لمعرفة السعر والتفاصيل.</p>
+      <a class="extra-order" href="https://wa.me/201101598044?text=أريد%20الاستفسار%20عن%20خدمات%20Instagram">اسأل عن السعر</a>
+    </article>
+    <article class="extra-card" data-extra-category="social">
+      <h3>🎬 Kwai</h3><p style="color:#bbb;font-size:12px;line-height:1.8">تواصل معنا لمعرفة الأسعار المتاحة.</p>
+      <a class="extra-order" href="https://wa.me/201101598044?text=أريد%20الاستفسار%20عن%20خدمات%20Kwai">اسأل عن السعر</a>
+    </article>
+  </div>
+</section>
+<section class="extra-section" id="contact">
+  <span class="eyebrow">CONTACT & COMMUNITY</span><h2>تواصل معنا <em>وجروباتنا</em></h2>
+  <div class="contact-grid">
+    <div class="contact-card"><h3>📞 أرقام التواصل</h3>
+      <a href="https://wa.me/201101598044" dir="ltr">01101598044 — واتساب الطلبات</a>
+      <a href="https://wa.me/201101597965" dir="ltr">01101597965</a>
+      <a href="https://wa.me/201094687658" dir="ltr">01094687658</a>
+      <a href="https://wa.me/201283599183" dir="ltr">01283599183</a>
+    </div>
+    <div class="contact-card"><h3>👥 جروبات البيع والشراء والتبديل والشحن</h3>
+      <a href="https://chat.whatsapp.com/FnNtQfsAhodJPe1xOG48ob?s=cl&p=a&mlu=4&ilr=4" target="_blank" rel="noopener">1️⃣ الفرع الأول</a>
+      <a href="https://chat.whatsapp.com/D8U8u7NJFMhGu6h2WSkytx?mode=ems_copy" target="_blank" rel="noopener">2️⃣ الفرع الثاني</a>
+    </div>
+    <div class="contact-card"><h3>📣 قناة شحن الألعاب والتطبيقات</h3>
+      <a href="https://www.facebook.com/share/p/1KCG2TbGdh/" target="_blank" rel="noopener">افتح منشور فيسبوك</a>
+    </div>
+    <div class="contact-card"><h3>🛡️ الضمان وآراء العملاء</h3>
+      <a href="https://whatsapp.com/channel/0029VbC1zF7KwqSJmHCamd0x" target="_blank" rel="noopener">قناة واتساب الخاصة بالضمان وآراء العملاء</a>
+    </div>
+  </div>
+</section>
+
+<footer><b>SKRAN STORE — سكران استور</b><br>متجر مستقل، وليس تابعًا رسميًا للعبة Free Fire.</footer>
+<div class="modalbg" id="modalbg" hidden><section class="modal" role="dialog" aria-modal="true"><button class="close" id="closeModal">×</button><div class="ico" id="micon">💎</div><span class="eyebrow">PRODUCT DETAILS</span><h2 id="mname"></h2><p id="mdesc"></p><div class="rowline"><span>السعر</span><b id="mprice"></b></div><div class="rowline"><span>هل يحتاج ID؟</span><b id="mid"></b></div><div class="actions"><button class="add" id="add">أضف للسلة</button><button class="buy" id="buy">اطلب الآن</button></div></section></div>
+<div class="drawerbg" id="shade" hidden></div><aside class="drawer" id="drawer"><div class="drawerhead"><h2>سلة التسوق</h2><button id="closeCart">إغلاق ×</button></div><div class="items" id="items"></div><div class="total"><span>الإجمالي</span><b id="total">0 جنيه</b></div><button class="buy full" id="checkout">اطلب عبر واتساب</button><p class="notice">سيتم فتح واتساب لمراجعة الطلب وإرساله بنفسك.</p></aside><div class="toast" id="toast"></div>
+<script>
+const WA="201101598044";
+const gameProducts={
+freefire:[
+{id:"monthly",name:"العضوية الشهرية",price:370,cat:"membership",icon:"👑",idreq:false,desc:"عرض فري فاير بالحساب. راجع تفاصيل التفعيل مع المتجر قبل تأكيد الطلب.",qtyLabel:"شهر"},
+{id:"weekly",name:"العضوية الأسبوعية",price:90,cat:"membership",icon:"🎟️",idreq:false,desc:"عضوية أسبوعية. راجع تفاصيل التفعيل مع المتجر قبل الطلب.",qtyLabel:"أسبوع"},
+{id:"weekly-id",name:"أسبوعية ID",price:120,cat:"membership",icon:"🪪",idreq:true,desc:"عضوية أسبوعية تتطلب ID اللاعب الصحيح.",qtyLabel:"أسبوع"},
+{id:"drop1",name:"دروب 1 دولار",price:50,cat:"drops",icon:"⚡",idreq:true,desc:"عرض دروب بقيمة دولار واحد، يتطلب ID اللاعب.",qtyLabel:"1 دولار"},
+{id:"drop2",name:"دروب 2 دولار",price:90,cat:"drops",icon:"🔥",idreq:true,desc:"عرض دروب بقيمة دولارين، يتطلب ID اللاعب.",qtyLabel:"2 دولار"},
+{id:"310",name:"310 جوهرة",price:140,cat:"diamonds",icon:"💎",idreq:true,desc:"باقة 310 جوهرة، تتطلب ID اللاعب للشحن.",qtyLabel:"310 جوهرة"},
+{id:"520",name:"520 جوهرة",price:210,cat:"diamonds",icon:"💎",idreq:true,desc:"باقة 520 جوهرة، تتطلب ID اللاعب للشحن.",qtyLabel:"520 جوهرة"},
+{id:"1060",name:"1060 جوهرة",price:370,cat:"diamonds",icon:"💎",idreq:true,desc:"باقة 1060 جوهرة، تتطلب ID اللاعب للشحن.",qtyLabel:"1060 جوهرة"},
+{id:"2180",name:"2180 جوهرة",price:740,cat:"diamonds",icon:"💎",idreq:true,desc:"باقة 2180 جوهرة، تتطلب ID اللاعب للشحن.",qtyLabel:"2180 جوهرة"},
+{id:"3240",name:"3240 جوهرة",price:1100,cat:"diamonds",icon:"💎",idreq:true,desc:"باقة 3240 جوهرة، تتطلب ID اللاعب للشحن.",qtyLabel:"3240 جوهرة"},
+{id:"5600",name:"5600 جوهرة",price:1850,cat:"diamonds",icon:"💎",idreq:true,desc:"باقة 5600 جوهرة، تتطلب ID اللاعب للشحن.",qtyLabel:"5600 جوهرة"},
+{id:"11200",name:"11200 جوهرة",price:3600,cat:"diamonds",icon:"💎",idreq:true,desc:"باقة 11200 جوهرة، تتطلب ID اللاعب للشحن.",qtyLabel:"11200 جوهرة"}],
+pubg:[
+{id:"pubg-60",name:"60 شدة ببجي",price:null,cat:"uc",icon:"🎯",idreq:true,desc:"باقة 60 شدة ببجي موبايل. السعر غير محدد بعد، عدّله في الملف قبل استقبال الطلبات.",qtyLabel:"60 شدة"},
+{id:"pubg-325",name:"325 شدة ببجي",price:null,cat:"uc",icon:"🎯",idreq:true,desc:"باقة 325 شدة ببجي موبايل. السعر غير محدد بعد، عدّله في الملف قبل استقبال الطلبات.",qtyLabel:"325 شدة"},
+{id:"pubg-660",name:"660 شدة ببجي",price:null,cat:"uc",icon:"🎯",idreq:true,desc:"باقة 660 شدة ببجي موبايل. السعر غير محدد بعد، عدّله في الملف قبل استقبال الطلبات.",qtyLabel:"660 شدة"}],
+fifa:[
+{id:"fc-points-100",name:"100 نقطة FC",price:null,cat:"points",icon:"⚽",idreq:true,desc:"باقة 100 نقطة FC. السعر غير محدد بعد، عدّله في الملف قبل استقبال الطلبات.",qtyLabel:"100 نقطة"},
+{id:"fc-points-500",name:"500 نقطة FC",price:null,cat:"points",icon:"⚽",idreq:true,desc:"باقة 500 نقطة FC. السعر غير محدد بعد، عدّله في الملف قبل استقبال الطلبات.",qtyLabel:"500 نقطة"},
+{id:"fc-points-1050",name:"1050 نقطة FC",price:null,cat:"points",icon:"⚽",idreq:true,desc:"باقة 1050 نقطة FC. السعر غير محدد بعد، عدّله في الملف قبل استقبال الطلبات.",qtyLabel:"1050 نقطة"}],
+pes:[
+{id:"pes-coin-100",name:"100 كوينز بيس",price:null,cat:"coins",icon:"⚽",idreq:true,desc:"باقة 100 كوينز eFootball. السعر غير محدد بعد، عدّله في الملف قبل استقبال الطلبات.",qtyLabel:"100 كوينز"},
+{id:"pes-coin-550",name:"550 كوينز بيس",price:null,cat:"coins",icon:"⚽",idreq:true,desc:"باقة 550 كوينز eFootball. السعر غير محدد بعد، عدّله في الملف قبل استقبال الطلبات.",qtyLabel:"550 كوينز"},
+{id:"pes-coin-1040",name:"1040 كوينز بيس",price:null,cat:"coins",icon:"⚽",idreq:true,desc:"باقة 1040 كوينز eFootball. السعر غير محدد بعد، عدّله في الملف قبل استقبال الطلبات.",qtyLabel:"1040 كوينز"}]
+};
+let currentGame="freefire";
+const allProducts=()=>Object.values(gameProducts).flat();
+const productsProxy=()=>gameProducts[currentGame];
+const $=id=>document.getElementById(id), money=n=>n.toLocaleString("en-US")+" جنيه";let filter="all",selected=null;const cart={};
+function render(){let q=$("search").value.trim().toLowerCase(),arr=productsProxy().filter(p=>(filter==="all"||p.cat===filter)&&p.name.toLowerCase().includes(q));$("grid").innerHTML=arr.map(p=>`<article class="card" data-id="${p.id}"><div class="ico">${p.icon}</div><h3>${p.name}</h3><p>${p.idreq?"يتطلب ID اللاعب":"اضغط لمعرفة التفاصيل"}</p><div class="cardfoot"><span class="pricehint">${p.price==null?"اسأل عن السعر":money(p.price)}</span><button class="details" data-order-id="${p.id}">اطلب واتساب ↗</button><button class="details" data-details-id="${p.id}">التفاصيل</button></div></article>`).join("");$("empty").hidden=!!arr.length}
+function show(id){selected=allProducts().find(p=>p.id===id);if(!selected)return;$("micon").textContent=selected.icon;$("mname").textContent=selected.name;$("mdesc").textContent=selected.desc;$("mprice").textContent=selected.price==null?"السعر يُحدد قريبًا":money(selected.price);$("mid").textContent=selected.idreq?"نعم، مطلوب":"لا";$("modalbg").hidden=false}
+function add(p){if(p.price==null){say("السعر لسه مش متحدد للباقة دي");return}cart[p.id]=(cart[p.id]||0)+1;renderCart();say("اتضاف المنتج للسلة")}
+function renderCart(){let entries=Object.keys(cart).map(id=>({p:allProducts().find(p=>p.id===id),qty:cart[id]})).filter(x=>x.p);$("count").textContent=entries.reduce((s,x)=>s+x.qty,0);$("items").innerHTML=entries.length?entries.map(x=>`<div class="item"><div><b>${x.p.icon} ${x.p.name}</b><small>الكمية: ${x.qty} · ID: ${x.p.idreq?"مطلوب":"غير مطلوب"}</small></div><div><b>${money(x.p.price*x.qty)}</b><button class="remove" data-remove="${x.p.id}">حذف</button></div></div>`).join(""):"<p>السلة فاضية. اختار منتج من المتجر.</p>";$("total").textContent=money(entries.reduce((s,x)=>s+x.p.price*x.qty,0))}
+function order(entries){if(!entries.length){say("اختار منتج الأول");return}let total=entries.reduce((s,x)=>s+(x.p.price||0)*x.qty,0),hasUnknown=entries.some(x=>x.p.price==null),text="السلام عليكم، عايز أطلب من SKRAN STORE:\n"+entries.map(x=>"- "+x.p.name+" × "+x.qty+" | السعر: "+(x.p.price==null?"برجاء تأكيد السعر":money(x.p.price*x.qty))+" | يحتاج ID: "+(x.p.idreq?"نعم":"لا")).join("\n")+(hasUnknown?"\nبرجاء تأكيد السعر النهائي.":"\nالإجمالي: "+money(total))+"\nمن فضلك أكدلي تفاصيل الطلب.";window.location.href="https://wa.me/"+WA+"?text="+encodeURIComponent(text)}
+function say(t){$("toast").textContent=t;$("toast").classList.add("show");setTimeout(()=>$("toast").classList.remove("show"),1800)}
+function openCart(){$("drawer").classList.add("open");$("shade").hidden=false}function closeCart(){$("drawer").classList.remove("open");$("shade").hidden=true}
+$("gameGrid").addEventListener("click",e=>{let b=e.target.closest("[data-game]");if(!b)return;currentGame=b.dataset.game;document.querySelectorAll(".game-tile").forEach(x=>x.classList.toggle("selected",x===b));$("search").value="";render();$("products").scrollIntoView({behavior:"smooth"});});$("grid").addEventListener("click",e=>{let o=e.target.closest("[data-order-id]");if(o){e.stopPropagation();let p=allProducts().find(x=>x.id===o.dataset.orderId);if(p)order([{p,qty:1}]);return}let d=e.target.closest("[data-details-id]");if(d){e.stopPropagation();show(d.dataset.detailsId);return}let c=e.target.closest("[data-id]");if(c)show(c.dataset.id)});$("filters").addEventListener("click",e=>{let b=e.target.closest("[data-cat]");if(!b)return;filter=b.dataset.cat;document.querySelectorAll(".filter").forEach(x=>x.classList.toggle("active",x===b));render()});$("search").addEventListener("input",render);$("closeModal").onclick=()=>$("modalbg").hidden=true;$("modalbg").addEventListener("click",e=>{if(e.target===$("modalbg"))$("modalbg").hidden=true});$("add").onclick=()=>{if(selected)add(selected);$("modalbg").hidden=true};$("buy").onclick=()=>{if(selected)order([{p:selected,qty:1}])};$("cartOpen").onclick=openCart;$("closeCart").onclick=closeCart;$("shade").onclick=closeCart;$("items").addEventListener("click",e=>{let b=e.target.closest("[data-remove]");if(b){delete cart[b.dataset.remove];renderCart()}});$("checkout").onclick=()=>order(Object.keys(cart).map(id=>({p:allProducts().find(p=>p.id===id),qty:cart[id]})).filter(x=>x.p));render();renderCart();
+
+document.querySelectorAll("[data-extra-category]").forEach(card=>card.hidden=false);
+document.querySelectorAll("[data-extra-filter]").forEach(btn=>btn.addEventListener("click",()=>{
+  document.querySelectorAll("[data-extra-filter]").forEach(x=>x.classList.toggle("active",x===btn));
+  const f=btn.dataset.extraFilter;
+  document.querySelectorAll("[data-extra-category]").forEach(card=>card.hidden=!(f==="all"||card.dataset.extraCategory===f));
+}));
+
+</script>
+</body></html>
